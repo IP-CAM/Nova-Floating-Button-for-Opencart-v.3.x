@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+    <name>Nova Floating Button</name>
+    <version>1.0</version>
+    <author>NovaYazilim</author>
+    <link>https://novayazilim.com.tr</link>
+    <code>nova_floating_button</code>
+	<file path="catalog/controller/common/content_bottom.php">
+        <operation>
+            <search><![CDATA[return $this->load->view('common/content_bottom', $data);]]></search>
+            <add position="before"><![CDATA[
+                $data['nova_floating_button'] = $this->load->controller('extension/module/nova_floating_button');
+            ]]></add>
+        </operation>
+    </file>
+	<file path="catalog/view/theme/default/template/common/content_bottom.twig">
+        <operation>
+            <search><![CDATA[{% endfor %}]]></search>
+            <add position="after"><![CDATA[
+                {{ nova_floating_button }}
+            ]]></add>
+        </operation>
+    </file>
+</modification>
