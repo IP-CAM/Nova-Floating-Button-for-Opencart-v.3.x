@@ -1,4 +1,4 @@
-This is a free module for Opencart. It adds a simple floating point to your pages. It will be displayed in the lower right corner of all pages.
+This is a free module for Opencart. It adds a simple floating button to your pages. It will be displayed in the lower right corner of all pages.
 
 ![image](https://user-images.githubusercontent.com/12291679/147863208-5f1cc2d0-3c53-4861-985b-b50bc229fa72.png)
 
