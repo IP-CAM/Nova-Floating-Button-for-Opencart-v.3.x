@@ -5,6 +5,7 @@ class ControllerExtensionModuleNovaFloatingButton extends Controller {
 		
 		$this->load->model('setting/setting');
 
+		$data['module_nova_floating_button_status'] = $this->config->get('module_nova_floating_button_status');
 		$data['module_nova_floating_button_link'] = $this->config->get('module_nova_floating_button_link');
 		$data['module_nova_floating_button_image'] = $this->config->get('module_nova_floating_button_image');
 		$data['module_nova_floating_button_width'] = $this->config->get('module_nova_floating_button_width');
@@ -19,7 +20,7 @@ class ControllerExtensionModuleNovaFloatingButton extends Controller {
 		}
 
 		$data['placeholder'] = $this->model_tool_image->resize('no_image.png', 100, 100);
-
+		
 		return $this->load->view('extension/module/nova_floating_button', $data);
 	}
 }
