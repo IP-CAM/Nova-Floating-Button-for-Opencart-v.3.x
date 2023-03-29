@@ -66,6 +66,7 @@ class ControllerExtensionModuleNovaFloatingButton extends Controller {
 
 		$data['action'] = $this->url->link('extension/module/nova_floating_button', 'user_token=' . $this->session->data['user_token'], true);
 
+		
 		$data['cancel'] = $this->url->link('marketplace/extension', 'user_token=' . $this->session->data['user_token'] . '&type=module', true);
 
 		if (isset($this->request->post['module_nova_floating_button_link'])) {
