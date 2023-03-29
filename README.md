@@ -10,4 +10,4 @@ You can set the link as the url that the address of page to be opened when the b
 
 You can see how to install and configure it:
 
-https://www.youtube.com/watch?v=gpbRlOyVBAQ
+https://youtu.be/gpbRlOyVBAQ
